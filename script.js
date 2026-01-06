@@ -217,7 +217,7 @@ function checkESA(grades) {
         result.allProblems.push({
             subject: 'Durchschnitt',
             grade: `⌀${avg.toFixed(2)}`,
-            reason: 'Durchschnitt muss mindestens G4 sein',
+            reason: 'Durchschnitt muss mindestens G4 (Wert 3) sein',
             canCompensate: false
         });
         return result;

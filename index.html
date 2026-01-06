@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abschlussrechner - Schule Maretstraße</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Abschlussrechner</h1>
+            <p>Schule Maretstraße Hamburg</p>
+        </div>
+        
+        <div class="main-content">
+            <div class="left-panel">
+                <div class="info-box">
+                    <strong>Hinweis:</strong> Dieser Rechner gibt dir eine Orientierung, welchen Abschluss du mit deinen aktuellen Noten erreichen könntest. Die endgültige Bewertung erfolgt durch die Zeugniskonferenz und ist nicht verbindlich. Fehler in der Berechnung können nicht ausgeschlossen werden. Das Ergebnis wird in Echtzeit berechnet!
+                </div>
+                
+                <div class="section">
+                    <h2>Hauptfächer (Gesamtnoten inkl. Prüfungen)</h2>
+                    
+                    <div class="fach-item hauptfach">
+                        <label>
+                            <span class="hauptfach-badge">Hauptfach</span>
+                            Deutsch
+                        </label>
+                        <div class="grade-options" id="deutsch-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item hauptfach">
+                        <label>
+                            <span class="hauptfach-badge">Hauptfach</span>
+                            Englisch
+                        </label>
+                        <div class="grade-options" id="englisch-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item hauptfach">
+                        <label>
+                            <span class="hauptfach-badge">Hauptfach</span>
+                            Mathematik
+                        </label>
+                        <div class="grade-options" id="mathematik-grades"></div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h2>Nebenfächer (Ganzjahresnoten)</h2>
+                    
+                    <div class="fach-item">
+                        <label>PGW (Politik-Gesellschaft-Wirtschaft)</label>
+                        <div class="grade-options" id="pgw-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item">
+                        <label>Religion</label>
+                        <div class="grade-options" id="religion-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item">
+                        <label>Sport</label>
+                        <div class="grade-options" id="sport-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item">
+                        <label>Physik</label>
+                        <div class="grade-options" id="physik-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item">
+                        <label>Chemie</label>
+                        <div class="grade-options" id="chemie-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item">
+                        <label>Biologie</label>
+                        <div class="grade-options" id="biologie-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item">
+                        <label>Künste</label>
+                        <div class="grade-options" id="kuenste-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item">
+                        <label>WPK (Wahlpflichtkurs)</label>
+                        <div class="grade-options" id="wpk-grades"></div>
+                    </div>
+                    
+                    <div class="fach-item">
+                        <label>Berufsvorbereitung</label>
+                        <div class="grade-options" id="beruf-grades"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <h2>
+                    <span class="live-indicator"></span>
+                    Live-Ergebnis
+                </h2>
+                
+                <div id="ergebnis" class="result neutral">
+                    <h3>Noch keine Noten eingegeben</h3>
+                    <p>Fülle die Felder links aus, um zu sehen, welchen Abschluss du erreichen kannst. Das Ergebnis wird automatisch berechnet!</p>
+                </div>
+                
+                <div class="note-legende">
+                    <h4>Notenlegende Stadtteilschule Hamburg:</h4>
+                    <table>
+                        <tr><td>E1</td><td>Erweiterungsniveau - sehr gut</td></tr>
+                        <tr><td>E2</td><td>Erweiterungsniveau - gut+</td></tr>
+                        <tr><td>E3</td><td>Erweiterungsniveau - gut</td></tr>
+                        <tr><td>E4/G1</td><td>Erw./Grundniveau - befriedigend</td></tr>
+                        <tr><td>G2</td><td>Grundniveau - ausreichend+</td></tr>
+                        <tr><td>G3</td><td>Grundniveau - ausreichend</td></tr>
+                        <tr><td>G4</td><td>Grundniveau - mangelhaft+</td></tr>
+                        <tr><td>G5</td><td>Grundniveau - mangelhaft</td></tr>
+                        <tr><td>G6</td><td>Grundniveau - ungenügend</td></tr>
+                        <tr><td>B</td><td>Bericht (kein Abschluss möglich)</td></tr>
+                        <tr><td>KB</td><td>Keine Bewertung (kein Abschluss möglich)</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<p>(c) Dennis Filipiak 2025, alle Rechte vorbehalten</p>
+
+</body>
+</html>
